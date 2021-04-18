@@ -10,7 +10,7 @@ library("seriation")
 library("gplots")
 library("RColorBrewer")
 
-## ---- fig.width=10, fig.height=5----------------------------------------------
+## ---- fig.width=7, fig.height=5-----------------------------------------------
 #simulate the data
 set.seed(1234)
 x <- rnorm(10, mean=rep(1:5, each=2), sd=0.4)
@@ -30,7 +30,7 @@ plot(hc, main="before sorting", sub ="", xlab="" )
 #Reordered dendrogram
 plot(dendsort(hc), main="after sorting", sub="", xlab="")
 
-## ---- fig.width=10, fig.height=5----------------------------------------------
+## ---- fig.width=7, fig.height=5-----------------------------------------------
 #simulate the data
 set.seed(1234)
 x=matrix(rnorm(50*2), ncol=2)
@@ -48,13 +48,13 @@ plot(hc.average, main="Average Linkage", xlab="", sub="", cex=0.7)
 plot(hc.single, main="Single Linkage", xlab="", sub="", cex=0.7)
 
 
-## ---- fig.width=10, fig.height=5----------------------------------------------
+## ---- fig.width=7, fig.height=5-----------------------------------------------
 par(mfrow=c(1,3), mar = c(5, 4, 4, 2))
 plot(dendsort(hc.complete), main="Complete Linkage", xlab="", sub="", cex=0.7)
 plot(dendsort(hc.average), main="Average Linkage", xlab="", sub="", cex=0.7)
 plot(dendsort(hc.single), main="Single Linkage", xlab="", sub="", cex=0.7)
 
-## ---- fig.width=8, fig.height=8-----------------------------------------------
+## ---- fig.width=7, fig.height=7-----------------------------------------------
 #load the iris data
 data("iris")
 x <- as.matrix(iris[-5]) #drop the 5th colum
@@ -77,7 +77,7 @@ par(mar=c(2, 5, 5, 2))
 heatmap.2(as.matrix(d), col=gray.colors(100), dendrogram ="both",
           Rowv=rev(as.dendrogram(hc_HC)), Colv=(as.dendrogram(hc_HC)),
           scale="none", labRow="", labCol="", ColSideColors = sideColors,
-          symm =TRUE, key = TRUE, keysize =1, trace="none", density.info="none", xlab="HC")
+          symm = TRUE, key = TRUE, keysize =1, trace="none", density.info="none", xlab="HC")
 #legend("topright", pch = 15, col = c("#66C2A5", "#FC8D62", "#8DA0CB"), legend = c("setosa", "versicolor", "virginica"))
 
 #GW
@@ -103,7 +103,7 @@ heatmap.2(as.matrix(d), col=gray.colors(100), dendrogram ="both",
 #legend("topright", pch = 15, col = c("#66C2A5", "#FC8D62", "#8DA0CB"), legend = c("setosa", "versicolor", "virginica"))
 
 
-## ---- fig.width=10, fig.height=5----------------------------------------------
+## ---- fig.width=7, fig.height=5-----------------------------------------------
 par(mfrow=c(1,3), mar = c(5, 4, 4, 2))
 data(sample_tcga)
 #transpose
@@ -116,7 +116,7 @@ col_hc <- hclust(col_dist, method = "complete")
 row_hc <- hclust(row_dist, method = "complete")
 
 
-## ---- fig.width=10, fig.height=5----------------------------------------------
+## ---- fig.width=7, fig.height=5-----------------------------------------------
 par(mfrow=c(1,3), mar = c(5, 4, 4, 2))
 #MOLO Figure 7
 heatmap.2(dataTable, Rowv=dendsort(as.dendrogram(row_hc), isRevers=TRUE), Colv=dendsort(as.dendrogram(col_hc)),
