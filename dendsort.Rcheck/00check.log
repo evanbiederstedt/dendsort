@@ -1,0 +1,44 @@
+* using log directory ‘/Users/evanbiederstedt/dendsort/dendsort.Rcheck’
+* using R version 4.0.3 (2020-10-10)
+* using platform: x86_64-apple-darwin17.0 (64-bit)
+* using session charset: UTF-8
+* using option ‘--as-cran’
+* checking for file ‘dendsort/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘dendsort’ version ‘0.3.4’
+* package encoding: UTF-8
+* checking CRAN incoming feasibility ... NOTE
+Maintainer: ‘Evan Biederstedt <evan.biederstedt@gmail.com>’
+
+New maintainer:
+  Evan Biederstedt <evan.biederstedt@gmail.com>
+Old maintainer(s):
+  Ryo Sakai <ryo@vda-lab.be>
+
+Suggests or Enhances not in mainstream repositories:
+  gapmap
+
+Found the following (possibly) invalid URLs:
+  URL: https://cran.r-project.org/web/packages/dendsort/index.html
+    From: README.md
+    Status: 200
+    Message: OK
+    CRAN URL not in canonical form
+  The canonical URL of the CRAN page for a package is 
+    https://CRAN.R-project.org/package=pkgname
+
+The Description field contains
+  2014, 3: 177 <https://doi.org/10.12688/f1000research.4784.1>
+Please write DOIs as <doi:10.prefix/suffix>.
+* checking package namespace information ... OK
+* checking package dependencies ... ERROR
+Package suggested but not available: ‘gapmap’
+
+The suggested packages are required for a complete check.
+Checking can be attempted without them by setting the environment
+variable _R_CHECK_FORCE_SUGGESTS_ to a false value.
+
+See section ‘The DESCRIPTION file’ in the ‘Writing R Extensions’
+manual.
+* DONE
+Status: 1 ERROR, 1 NOTE

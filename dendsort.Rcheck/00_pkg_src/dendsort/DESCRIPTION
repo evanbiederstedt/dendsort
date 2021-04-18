@@ -8,8 +8,10 @@ License: GPL-2 | GPL-3
 Encoding: UTF-8
 Suggests: knitr, RColorBrewer, gplots, seriation, gapmap
 VignetteBuilder: knitr
-URL: https://github.com/evanbiederstedt/dendsort
-BugReports: https://github.com/evanbiederstedt/dendsort/issues
+URL: https://github.com/evanbiederstedt/dendsort/issues
 RoxygenNote: 7.1.1
 NeedsCompilation: no
 Maintainer: Evan Biederstedt <evan.biederstedt@gmail.com>
+Packaged: 2021-04-18 04:41:33 UTC; evanbiederstedt
+Author: Ryo Sakai [aut],
+  Evan Biederstedt [cre, aut]
