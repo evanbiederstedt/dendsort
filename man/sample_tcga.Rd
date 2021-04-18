@@ -4,7 +4,9 @@
 \name{sample_tcga}
 \alias{sample_tcga}
 \title{Sample data matrix from the integrated pathway analysis of gastric cancer from the Cancer Genome Atlas (TCGA) study}
-\format{A data frame with 215 rows and 117 variables}
+\format{
+A data frame with 215 rows and 117 variables
+}
 \usage{
 data(sample_tcga)
 }
@@ -18,4 +20,3 @@ assigned to score positive or negative association, respectively.
 We would like to thank Sheila Reynolds and Vesteinn Thorsson from the Institute for Systems Biology for sharing this sample data set.
 }
 \keyword{datasets}
-

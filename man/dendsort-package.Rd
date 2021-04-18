@@ -18,4 +18,3 @@ meaningful reordering for a coupled heatmap visualization.
 Ryo Sakai \email{ryo.sakai@esat.kuleuven.be}
 }
 \keyword{package}
-

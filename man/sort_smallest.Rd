@@ -49,4 +49,3 @@ plot(hc_sorted, main="after sorting", xlab="", sub="")
 
 }
 \keyword{internal}
-

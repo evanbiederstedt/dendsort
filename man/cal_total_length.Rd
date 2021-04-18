@@ -32,4 +32,3 @@ total_length <- cal_total_length(as.dendrogram(hc))
 
 }
 \keyword{internal}
-
