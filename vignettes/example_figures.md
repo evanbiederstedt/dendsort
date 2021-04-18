@@ -1,15 +1,5 @@
 
----
-title: "Figures from Manuscript"
-date: 25 September 2014
-output: 
-  rmarkdown::html_vignette:
-    toc: true
-vignette: >
-  %\VignetteIndexEntry{"Figures from Manuscript"}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
----
+# Figures from Manuscript
 
 (**Note:** Modifications were made to this Rmarkdown document to replace the function `heatmap.plus::heatmap.plus()` with `gplots::heatmap.2()`, as the package `heatmap.plus` was removed from CRAN. Edited on April 17, 2021, Evan Biederstedt.)
 
