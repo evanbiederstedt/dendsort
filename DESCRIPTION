@@ -1,0 +1,14 @@
+Package: dendsort
+Type: Package
+Title: Modular Leaf Ordering Methods for Dendrogram Nodes
+Version: 0.3.4
+Authors@R: c(person("Ryo", "Sakai", email="ryo@vda-lab.be", role="aut"), person("Evan", "Biederstedt", email="evan.biederstedt@gmail.com", role=c("cre", "aut")))
+Description: An implementation of functions to optimize ordering of nodes in a dendrogram, without affecting the meaning of the dendrogram. A dendrogram can be sorted based on the average distance of subtrees, or based on the smallest distance value. These sorting methods improve readability and interpretability of tree structure, especially for tasks such as comparison of different distance measures or linkage types and identification of tight clusters and outliers. As a result, it also introduces more meaningful reordering for a coupled heatmap visualization. This method is described in dendsort: modular leaf ordering methods for dendrogram representations in R.
+F1000Research 2014, 3:177 <https://doi.org/10.12688/f1000research.4784.1>
+License: GPL-2 | GPL-3
+Suggests: knitr, RColorBrewer, gplots, seriation, gapmap
+VignetteBuilder: knitr
+URL: https://github.com/evanbiederstedt/dendsort/issues
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Maintainer: Evan Biederstedt <evan.biederstedt@gmail.com>
