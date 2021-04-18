@@ -3,7 +3,7 @@
 
 (**Note:** Modifications were made to this Rmarkdown document to replace the function `heatmap.plus::heatmap.plus()` with `gplots::heatmap.2()`, as the package `heatmap.plus` was removed from CRAN. Edited on April 17, 2021, Evan Biederstedt.)
 
-This is an R Markdown document which shows how figures from the manuscript <http://f1000research.com/articles/3-177/v1> were generated. To generate these figures, you will need to install the following packages:`dendsort`,`seriation`, `gplots`, and `RColorBrewer`.  If you have not yet installed these packages, make sure to install them before moving on to the next step.
+This is an R Markdown document which shows how figures from the manuscript <https://f1000research.com/articles/3-177/v1> were generated. To generate these figures, you will need to install the following packages:`dendsort`,`seriation`, `gplots`, and `RColorBrewer`.  If you have not yet installed these packages, make sure to install them before moving on to the next step.
 
 
 ```r
