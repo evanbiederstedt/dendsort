@@ -9,7 +9,7 @@
 
 More information on this package can be found on CRAN [here](https://cran.r-project.org/web/packages/dendsort/index.html).
 
-This is a forked repo from dendsort version 0.3.3, which were made given updates to CRAN dependencies. The original sourcecode can be found on Bitbucket [here](https://bitbucket.org/vda-lab/dendsort/wiki/Home), and the original author was Ryo Sakai. The only changes to this version were made to the vignettes. 
+This is a forked repo from dendsort version 0.3.3, which were made given updates to CRAN dependencies. The original sourcecode by the author Ryo Sakai can be found on Bitbucket [here](https://bitbucket.org/vda-lab/dendsort/wiki/Home). The only changes made to this version were related to the vignettes. 
 
 ### Vignettes
 
