@@ -42,7 +42,7 @@ hc.complete = hclust(dist(x), method="complete")
 hc.average = hclust(dist(x), method="average")
 hc.single = hclust(dist(x), method="single")
 #generate Figure 4
-par(mfrow=c(1,3), mar = c(5, 4, 4, 2))
+par(mfrow=c(1,3), mar = c(2, 2, 2, 2))
 plot(hc.complete, main="Complete Linkage", xlab="", sub="", cex=0.7)
 plot(hc.average, main="Average Linkage", xlab="", sub="", cex=0.7)
 plot(hc.single, main="Single Linkage", xlab="", sub="", cex=0.7)
@@ -77,21 +77,21 @@ par(mar=c(2, 5, 5, 2))
 heatmap.2(as.matrix(d), col=gray.colors(100), dendrogram ="both",
           Rowv=rev(as.dendrogram(hc_HC)), Colv=(as.dendrogram(hc_HC)),
           scale="none", labRow="", labCol="", ColSideColors = sideColors,
-          symm =T, key = T, keysize =1, trace="none", density.info="none", xlab="HC")
+          symm =TRUE, key = TRUE, keysize =1, trace="none", density.info="none", xlab="HC")
 #legend("topright", pch = 15, col = c("#66C2A5", "#FC8D62", "#8DA0CB"), legend = c("setosa", "versicolor", "virginica"))
 
 #GW
 heatmap.2(as.matrix(d), col=gray.colors(100), dendrogram ="both",
           Rowv=rev(as.dendrogram(hc_GW)), Colv=(as.dendrogram(hc_GW)),
           scale="none", labRow="", labCol="", ColSideColors = sideColors,
-          symm =T, key = T, keysize =1, trace="none", density.info="none", xlab="GW")
+          symm =TRUE, key = TRUE, keysize =1, trace="none", density.info="none", xlab="GW")
 #legend("topright", pch = 15, col = c("#66C2A5", "#FC8D62", "#8DA0CB"), legend = c("setosa", "versicolor", "virginica"))
 
 #OLO
 heatmap.2(as.matrix(d), col=gray.colors(100), dendrogram ="both",
           Rowv=rev(as.dendrogram(hc_OLO)), Colv=(as.dendrogram(hc_OLO)),
           scale="none", labRow="", labCol="", ColSideColors = sideColors,
-          symm =T, key = T, keysize =1, trace="none", density.info="none", xlab="OLO")
+          symm =TRUE, key = TRUE, keysize =1, trace="none", density.info="none", xlab="OLO")
 #legend("topright", pch = 15, col = c("#66C2A5", "#FC8D62", "#8DA0CB"), legend = c("setosa", "versicolor", "virginica"))
 
 #MOLO
@@ -99,11 +99,12 @@ hc_MOLO = dendsort(hc_HC)
 heatmap.2(as.matrix(d), col=gray.colors(100), dendrogram ="both",
           Rowv=rev(as.dendrogram(hc_MOLO)), Colv=(as.dendrogram(hc_MOLO)),
           scale="none", labRow="", labCol="", ColSideColors = sideColors,
-          symm =T, key = T, keysize =1, trace="none", density.info="none", xlab="MOLO")
+          symm =TRUE, key = TRUE, keysize =1, trace="none", density.info="none", xlab="MOLO")
 #legend("topright", pch = 15, col = c("#66C2A5", "#FC8D62", "#8DA0CB"), legend = c("setosa", "versicolor", "virginica"))
 
 
-## ---- fig.width=10------------------------------------------------------------
+## ---- fig.width=10, fig.height=5----------------------------------------------
+par(mfrow=c(1,3), mar = c(5, 4, 4, 2))
 data(sample_tcga)
 #transpose
 dataTable <- t(sample_tcga)
@@ -115,14 +116,8 @@ col_hc <- hclust(col_dist, method = "complete")
 row_hc <- hclust(row_dist, method = "complete")
 
 
-#plot heatmap
-#HC Figure 1
-heatmap.2(dataTable, Rowv=as.dendrogram(row_hc), Colv=as.dendrogram(col_hc),
-             labRow="", labCol="", margins = c(2,1), xlab = "HC", 
-             col=brewer.pal(11, "RdBu"))
-
-
-## ---- fig.width=10------------------------------------------------------------
+## ---- fig.width=10, fig.height=5----------------------------------------------
+par(mfrow=c(1,3), mar = c(5, 4, 4, 2))
 #MOLO Figure 7
 heatmap.2(dataTable, Rowv=dendsort(as.dendrogram(row_hc), isRevers=TRUE), Colv=dendsort(as.dendrogram(col_hc)),
              labRow="", labCol="", margins = c(2,1), xlab = "MOLO", 
