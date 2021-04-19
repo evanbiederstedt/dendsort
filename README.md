@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/evanbiederstedt/dendsort.svg?branch=master)](https://travis-ci.com/github/evanbiederstedt/dendsort)
+[![Build Status](https://travis-ci.com/evanbiederstedt/dendsort.svg?branch=main)](https://travis-ci.com/github/evanbiederstedt/dendsort)
 [![CRAN status](https://www.r-pkg.org/badges/version/dendsort)](https://cran.r-project.org/package=dendsort)
 [![CRAN downloads](https://cranlogs.r-pkg.org/badges/dendsort)](https://cran.r-project.org/package=dendsort)
 
