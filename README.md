@@ -13,8 +13,8 @@ This is a forked repo from dendsort version 0.3.3, which were made given updates
 
 ### Vignettes
 
-* HTML version
-* Markdown version
+* [HTML version](https://htmlpreview.github.io/?https://raw.githubusercontent.com/evanbiederstedt/dendsort/blob/main/doc/example_figures.html)
+* [Markdown version](https://github.com/evanbiederstedt/dendsort/blob/main/vignettes/example_figures.md)
 
 ### Citation
 
